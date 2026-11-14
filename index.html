@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-view">
+
+    <header class="navbar">
+
+        <div class="brand-area">
+
+            <a href="#" class="logo" data-page="home">
+                STUDIO 02
+            </a>
+
+            <a
+                href="https://www.vinted.fr/member/3146694365"
+                class="vinted-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visiter notre profil Vinted"
+            >
+                <img
+                    class="vinted-logo-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Vinted_Logo_2022.svg"
+                    alt="Vinted"
+                >
+            </a>
+
+        </div>
+
+        <nav class="categories">
+            <a href="#" data-page="pulls">Pulls & Zips</a>
+            <a href="#" data-page="vestes">Vestes & Manteaux</a>
+            <a href="#" data-page="chaussures">Chaussures</a>
+            <a href="#" data-page="selection">Notre sélection</a>
+        </nav>
+
+        <div class="search-container">
+
+            <form class="search-form" id="searchForm">
+                <input
+                    type="text"
+                    placeholder="Rechercher un article..."
+                    id="searchInput"
+                >
+            </form>
+
+            <button
+                class="search-button"
+                id="searchButton"
+                aria-label="Ouvrir la recherche"
+            >
+                <svg viewBox="0 0 24 24">
+                    <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                    <line x1="16" y1="16" x2="22" y2="22"></line>
+                </svg>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main id="mainContent">
+
+        <!-- ACCUEIL -->
+        <section class="page active" id="home">
+
+            <!-- PREMIER DIAPORAMA -->
+            <div class="hero">
+
+                <div class="hero-slideshow">
+
+                    <div class="slide active">
+                        <img src="images/accueil-1.png" alt="Collection STUDIO 02">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/accueil-2.png" alt="Collection STUDIO 02">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/accueil-3.png" alt="Collection STUDIO 02">
+                    </div>
+
+                </div>
+
+                <div class="hero-overlay"></div>
+
+                <div class="hero-content">
+                    <h1>STUDIO 02</h1>
+                    <p>TWO WORLDS. ONE SELECTION.</p>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUITS DE L'ACCUEIL -->
+            <section class="products-section">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="section-eyebrow">LA SÉLECTION DU MOMENT</p>
+                        <h2>Les pièces à ne pas manquer.</h2>
+                    </div>
+
+                    <a href="#" class="text-link" data-page="selection">
+                        Explorer la sélection <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="products-grid">
+
+                    <!-- CASQUETTE GUCCI -->
+                    <a class="product-card" href="#" data-product="casquette">
+
+                        <div class="product-image">
+                            <img src="images/casquette-gucci-rose.png" alt="Casquette Gucci rose">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Casquette Gucci rose</h2>
+
+                            <div class="product-price-row">
+                                <p class="product-price">42,90 €</p>
+
+                                <span
+                                    class="condition-badge new"
+                                    tabindex="0"
+                                    data-tooltip="Article neuf, sans étiquette."
+                                    aria-label="Neuf : article sans étiquette."
+                                >
+                                    NEUF
+                                </span>
+                            </div>
+                        </div>
+
+                    </a>
+
+
+                    <!-- PULL CORTEIZ -->
+                    <a class="product-card" href="#" data-product="corteiz">
+
+                        <div class="product-image">
+                            <img src="images/pull-corteiz-rose.png" alt="Pull Corteiz C-Star rose">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Pull Corteiz C-Star Rose</h2>
+
+                            <div class="product-price-row">
+                                <p class="product-price">49,90 €</p>
+
+                                <span
+                                    class="condition-badge used"
+                                    tabindex="0"
+                                    data-tooltip="Excellent état. Porté quelques fois."
+                                    aria-label="Occasion : excellent état, porté quelques fois."
+                                >
+                                    OCCASION
+                                </span>
+                            </div>
+                        </div>
+
+                    </a>
+
+
+                    <!-- CHANEL RUNNER -->
+                    <a class="product-card" href="#" data-product="chanel">
+
+                        <div class="product-image">
+                            <img src="images/chanel-runner.png" alt="Chanel Runner">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Chanel Runner</h2>
+
+                            <div class="product-price-row">
+                                <p class="product-price">104,90 €</p>
+
+                                <span
+                                    class="condition-badge new"
+                                    tabindex="0"
+                                    data-tooltip="Article neuf, sans étiquette."
+                                    aria-label="Neuf : article sans étiquette."
+                                >
+                                    NEUF
+                                </span>
+                            </div>
+                        </div>
+
+                    </a>
+
+
+                    <!-- PULL CP COMPANY -->
+                    <a class="product-card" href="#" data-product="cp-company">
+
+                        <div class="product-image">
+                            <img src="images/pull-cp-company-noir.png" alt="Pull CP Company noir">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Pull CP Company</h2>
+
+                            <div class="product-price-row">
+                                <p class="product-price">39,90 €</p>
+
+                                <span
+                                    class="condition-badge new"
+                                    tabindex="0"
+                                    data-tooltip="Article neuf, sans étiquette."
+                                    aria-label="Neuf : article sans étiquette."
+                                >
+                                    NEUF
+                                </span>
+                            </div>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- DEUXIÈME DIAPORAMA -->
+            <section class="editorial-slideshow-section">
+
+                <div class="editorial-slideshow">
+
+                    <div class="editorial-slide active">
+                        <img src="images/selection-1.png" alt="Sélection STUDIO 02">
+                    </div>
+
+                    <div class="editorial-slide">
+                        <img src="images/selection-2.png" alt="Sélection STUDIO 02">
+                    </div>
+
+                    <div class="editorial-slide">
+                        <img src="images/selection-3.png" alt="Sélection STUDIO 02">
+                    </div>
+
+                    <div class="editorial-slideshow-overlay"></div>
+
+                    <div class="editorial-slideshow-caption">
+
+                        <p class="editorial-kicker">
+                            STUDIO 02 / ÉDITORIAL
+                        </p>
+
+                        <h2>Le style se trouve dans le détail.</h2>
+
+                        <a href="#" class="editorial-cta" data-page="selection">
+                            Découvrir la sélection <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BANDEAU DE PRÉSENTATION -->
+            <section class="service-strip" aria-label="Les engagements STUDIO 02">
+
+                <div>
+                    <span class="service-number">01</span>
+                    <p>Une sélection soignée</p>
+                </div>
+
+                <div>
+                    <span class="service-number">02</span>
+                    <p>Neuf & seconde main</p>
+                </div>
+
+                <div>
+                    <span class="service-number">03</span>
+                    <p>Chaque pièce a son histoire</p>
+                </div>
+
+            </section>
+
+
+            <!-- PRÉSENTATION DE LA MARQUE -->
+            <section class="brand-intro">
+
+                <p class="brand-intro-kicker">L'UNIVERS STUDIO 02</p>
+
+                <h2>Deux univers. Une seule sélection.</h2>
+
+                <p class="brand-intro-text">
+                    STUDIO 02 réunit des pièces neuves et de seconde main,
+                    sélectionnées pour leur style et leur singularité.
+                </p>
+
+            </section>
+
+        </section>
+
+
+        <!-- PAGE PRODUIT : CASQUETTE -->
+        <section class="page product-detail-page" id="product-casquette">
+
+            <button class="back-button" data-page="home">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                <span>Retour à la sélection</span>
+            </button>
+
+            <div class="product-detail">
+
+                <div class="product-detail-image">
+                    <img src="images/casquette-gucci-rose.png" alt="Casquette Gucci rose">
+                </div>
+
+                <div class="product-detail-info">
+
+                    <p class="detail-kicker">STUDIO 02 / PIÈCE 01</p>
+
+                    <h1>Casquette Gucci rose</h1>
+
+                    <div class="detail-price-row">
+
+                        <p class="detail-price">42,90 €</p>
+
+                        <span
+                            class="condition-badge new"
+                            tabindex="0"
+                            data-tooltip="Article neuf, sans étiquette."
+                            aria-label="Neuf : article sans étiquette."
+                        >
+                            NEUF
+                        </span>
+
+                    </div>
+
+                    <p class="detail-description">
+                        Découvrez cette pièce sélectionnée par STUDIO 02.
+                    </p>
+
+                    <a
+                        class="vinted-buy-button"
+                        href="https://www.vinted.fr/member/3146694365"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Acheter sur Vinted
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE PRODUIT : CORTEIZ -->
+        <section class="page product-detail-page" id="product-corteiz">
+
+            <button class="back-button" data-page="home">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                <span>Retour à la sélection</span>
+            </button>
+
+            <div class="product-detail">
+
+                <div class="product-detail-image">
+                    <img src="images/pull-corteiz-rose.png" alt="Pull Corteiz C-Star rose">
+                </div>
+
+                <div class="product-detail-info">
+
+                    <p class="detail-kicker">STUDIO 02 / PIÈCE 02</p>
+
+                    <h1>Pull Corteiz C-Star Rose</h1>
+
+                    <div class="detail-price-row">
+
+                        <p class="detail-price">49,90 €</p>
+
+                        <span
+                            class="condition-badge used"
+                            tabindex="0"
+                            data-tooltip="Excellent état. Porté quelques fois."
+                            aria-label="Occasion : excellent état, porté quelques fois."
+                        >
+                            OCCASION
+                        </span>
+
+                    </div>
+
+                    <p class="detail-description">
+                        Découvrez cette pièce sélectionnée par STUDIO 02.
+                    </p>
+
+                    <a
+                        class="vinted-buy-button"
+                        href="https://www.vinted.fr/member/3146694365"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Acheter sur Vinted
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE PRODUIT : CHANEL RUNNER -->
+        <section class="page product-detail-page" id="product-chanel">
+
+            <button class="back-button" data-page="home">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                <span>Retour à la sélection</span>
+            </button>
+
+            <div class="product-detail">
+
+                <div class="product-detail-image">
+                    <img src="images/chanel-runner.png" alt="Chanel Runner">
+                </div>
+
+                <div class="product-detail-info">
+
+                    <p class="detail-kicker">STUDIO 02 / PIÈCE 03</p>
+
+                    <h1>Chanel Runner</h1>
+
+                    <div class="detail-price-row">
+
+                        <p class="detail-price">104,90 €</p>
+
+                        <span
+                            class="condition-badge new"
+                            tabindex="0"
+                            data-tooltip="Article neuf, sans étiquette."
+                            aria-label="Neuf : article sans étiquette."
+                        >
+                            NEUF
+                        </span>
+
+                    </div>
+
+                    <p class="detail-description">
+                        Découvrez cette pièce sélectionnée par STUDIO 02.
+                    </p>
+
+                    <a
+                        class="vinted-buy-button"
+                        href="https://www.vinted.fr/member/3146694365"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Acheter sur Vinted
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE PRODUIT : CP COMPANY -->
+        <section class="page product-detail-page" id="product-cp-company">
+
+            <button class="back-button" data-page="home">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                <span>Retour à la sélection</span>
+            </button>
+
+            <div class="product-detail">
+
+                <div class="product-detail-image">
+                    <img src="images/pull-cp-company-noir.png" alt="Pull CP Company noir">
+                </div>
+
+                <div class="product-detail-info">
+
+                    <p class="detail-kicker">STUDIO 02 / PIÈCE 04</p>
+
+                    <h1>Pull CP Company</h1>
+
+                    <div class="detail-price-row">
+
+                        <p class="detail-price">39,90 €</p>
+
+                        <span
+                            class="condition-badge new"
+                            tabindex="0"
+                            data-tooltip="Article neuf, sans étiquette."
+                            aria-label="Neuf : article sans étiquette."
+                        >
+                            NEUF
+                        </span>
+
+                    </div>
+
+                    <p class="detail-description">
+                        Découvrez cette pièce sélectionnée par STUDIO 02.
+                    </p>
+
+                    <a
+                        class="vinted-buy-button"
+                        href="https://www.vinted.fr/member/3146694365"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Acheter sur Vinted
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PULLS & ZIPS -->
+        <section class="page" id="pulls">
+
+            <div class="category-header">
+
+                <p class="section-eyebrow">STUDIO 02 / COLLECTION</p>
+
+                <h1>Pulls & Zips</h1>
+
+                <p>
+                    Des essentiels aux pièces fortes, trouvez celle qui vous ressemble.
+                </p>
+
+                <div class="category-note">
+                    <span>LA SÉLECTION STUDIO 02</span>
+                    <span>NEUF & SECONDE MAIN</span>
+                </div>
+
+            </div>
+
+            <div class="category-products" id="products-pulls"></div>
+
+        </section>
+
+
+        <!-- VESTES & MANTEAUX -->
+        <section class="page" id="vestes">
+
+            <div class="category-header">
+
+                <p class="section-eyebrow">STUDIO 02 / COLLECTION</p>
+
+                <h1>Vestes & Manteaux</h1>
+
+                <p>
+                    Des silhouettes affirmées et des pièces pensées pour durer.
+                </p>
+
+                <div class="category-note">
+                    <span>LA SÉLECTION STUDIO 02</span>
+                    <span>NEUF & SECONDE MAIN</span>
+                </div>
+
+            </div>
+
+            <div class="category-products" id="products-vestes"></div>
+
+        </section>
+
+
+        <!-- CHAUSSURES -->
+        <section class="page" id="chaussures">
+
+            <div class="category-header">
+
+                <p class="section-eyebrow">STUDIO 02 / COLLECTION</p>
+
+                <h1>Chaussures</h1>
+
+                <p>
+                    La touche finale pour construire une silhouette singulière.
+                </p>
+
+                <div class="category-note">
+                    <span>LA SÉLECTION STUDIO 02</span>
+                    <span>NEUF & SECONDE MAIN</span>
+                </div>
+
+            </div>
+
+            <div class="category-products" id="products-chaussures"></div>
+
+        </section>
+
+
+        <!-- NOTRE SÉLECTION -->
+        <section class="page" id="selection">
+
+            <div class="category-header">
+
+                <p class="section-eyebrow">STUDIO 02 / CURATED</p>
+
+                <h1>Notre sélection</h1>
+
+                <p>
+                    Des pièces choisies pour leur caractère, leur style et leur singularité.
+                </p>
+
+                <div class="category-note">
+                    <span>ÉDITIONS CHOISIES</span>
+                    <span>NEUF & SECONDE MAIN</span>
+                </div>
+
+            </div>
+
+            <div class="category-products" id="products-selection"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIED DE PAGE -->
+    <footer class="site-footer">
+
+        <p>© 2026 STUDIO 02, Inc. Tous droits réservés.</p>
+
+        <a
+            href="https://www.vinted.fr/member/3146694365"
+            class="footer-vinted-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visiter notre profil Vinted"
+        >
+            <img
+                class="vinted-logo-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Vinted_Logo_2022.svg"
+                alt="Vinted"
+            >
+        </a>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
